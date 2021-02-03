@@ -4,17 +4,18 @@
 <head>
     <title>user_profile</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="functionality.js"></script>
 </head>
 
 <body>
     <img src="images/profile_img.jpg" alt="profile_image">
     <p><b>@user_handle</b></p>
     <p>I'd love to explore!!!!!!</p>
-    <i class="material-icons">comment</i>
+    <i class="material-icons" onclick="countComments()">comment</i>
     <input type="number" name="comment_count" id="comment_count">
-    <i class="material-icons">autorenew</i>
+    <i class="material-icons" onclick="countRetweets()">autorenew</i>
     <input type="number" name="retweet_count" id="retweet_count">
-    <i class="material-icons">favorite_border</i>
+    <i class="material-icons" id="like" onclick="changeColor();countLikes()">favorite_border</i>
     <input type="number" name="like_count" id="like_count">
 </body>
 
